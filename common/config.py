@@ -1,0 +1,13 @@
+"""뽀송 프로젝트: 핀과 기준값 (BCM 번호)."""
+SENSOR_PINS = {1: 4, 2: 17}
+FAN_PINS = {1: (18, 19), 2: (13, 26)}
+START_RH = 70.0
+STOP_RH = 55.0
+START_CONFIRM = 3
+STOP_CONFIRM = 3
+MAX_DRY_SECONDS = 2 * 60 * 60
+SAMPLE_SECONDS = 3
+LOG_SECONDS = 30
+STALE_SECONDS = 20
+# 팬 하드웨어가 3.3V HIGH=ON으로 동작하는지 확인 후 변경
+FAN_ACTIVE_HIGH = True

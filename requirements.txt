@@ -1,0 +1,4 @@
+# Standard-library simulation/tests need no third-party packages.
+# On Raspberry Pi only, install compatible packages for your OS:
+# adafruit-circuitpython-dht
+# RPi.GPIO
