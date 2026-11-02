@@ -1,0 +1,74 @@
+:root {--bg:#f7f5f1;--paper:#fffefa;--ink:#402f29;--muted:#98877f;--brown:#765447;--border:#e8e1db;--soft:#f0ebe6;--accent:#b78c70;--green:#588675;--red:#b86d62;--shadow:0 8px 30px rgba(78,54,42,.055)}
+    *{box-sizing:border-box} html,body{margin:0;min-height:100%;font-family: -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:var(--ink);background:#e9e6e2} button,input{font:inherit} button{cursor:pointer} button:focus-visible,input:focus-visible{outline:2px solid #96765e;outline-offset:3px}
+    .app{max-width:440px;margin:auto;min-height:100dvh;background:var(--bg);position:relative;padding:24px 21px 112px;box-shadow:0 0 70px #32211912} .eyebrow{font-size:11px;font-weight:750;letter-spacing:2.2px;color:var(--accent)} h1,h2,h3,p{margin:0} h1{font-size:26px;letter-spacing:-1.1px} h2{font-size:18px;letter-spacing:-.5px} h3{font-size:15px} .muted{color:var(--muted)} .small{font-size:12px;line-height:1.7} .page{display:none;animation:enter .2s ease}.page.active{display:block}@keyframes enter{from{opacity:.45;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+    .heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:26px}.brand-symbol{background:#eee5df;color:var(--brown);height:43px;width:43px;border-radius:15px;display:grid;place-items:center;font-size:23px}.subtitle{font-size:13px;margin-top:6px;color:var(--muted)}.section-head{display:flex;align-items:center;justify-content:space-between;margin:26px 2px 13px}.section-head span{font-size:12px;color:var(--muted)}.card{background:var(--paper);border:1px solid var(--border);border-radius:22px;padding:19px;box-shadow:var(--shadow)}.weather{background:linear-gradient(130deg,#f1e9e2,#f7f3ee);border-color:#e8ddd4}.weather-head{display:flex;align-items:center;justify-content:space-between}.weather-emoji{font-size:29px;vertical-align:middle}.weather-temp{font-size:33px;letter-spacing:-1.6px;font-weight:750}.rule{height:1px;background:#e3d8d1;margin:16px 0}.recommend{font-size:13px;line-height:1.8;margin-top:6px}.badge{font-size:11px;font-weight:750;display:inline-flex;align-items:center;padding:6px 9px;border-radius:999px;background:#eee8e2;color:#806554}.badge.green{background:#e8f0e9;color:#527864}.badge.red{background:#f7e9e7;color:#a65e58}.row{display:flex;align-items:center;justify-content:space-between;gap:12px}.row + .row{margin-top:12px}.cabinet-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.cabinet-card{background:var(--paper);border:1px solid var(--border);border-radius:19px;padding:16px;text-align:left;color:inherit;transition:transform .15s,border-color .15s;min-height:166px}.cabinet-card:hover{transform:translateY(-2px);border-color:#c8ac97}.cabinet-card .art{height:65px;margin:8px 0 6px;display:grid;place-items:center;background:#f6f2ee;border-radius:13px;font-size:38px}.cabinet-card .state{font-size:12px;color:var(--muted);margin-top:3px}.notice{background:#efe9e3;padding:14px 15px;border-radius:16px;color:#7c675b;font-size:12px;line-height:1.7}.bottom-nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(440px,100%);z-index:10;background:rgba(255,254,251,.97);border-top:1px solid #e9e0d9;padding:8px 13px calc(8px + env(safe-area-inset-bottom));display:grid;grid-template-columns:repeat(4,1fr);gap:4px;backdrop-filter:blur(12px)}.nav-btn{border:0;background:transparent;border-radius:14px;padding:10px 2px 8px;color:#938781;display:flex;flex-direction:column;align-items:center;gap:6px;font-size:11px}.nav-btn .ico{font-size:20px}.nav-btn.active{background:#ede5df;color:#694b40;font-weight:800}.list{display:flex;flex-direction:column;gap:10px}.list-item{padding:16px;background:var(--paper);border:1px solid var(--border);border-radius:17px;text-align:left;display:flex;justify-content:space-between;align-items:center;color:inherit;width:100%}.list-item p{font-size:12px;color:var(--muted);margin-top:5px}.chev{font-size:22px;color:#c0b3a9}.metric-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}.metric{background:var(--paper);border:1px solid var(--border);border-radius:18px;padding:16px}.metric .value{font-size:25px;font-weight:780;margin:7px 0 3px}.metric .title{font-size:12px;color:var(--muted)}.status-banner{padding:22px;background:#f0e8e2;border-radius:22px;margin-bottom:14px}.status-banner .giant{font-size:45px;margin:12px 0 2px}.button{display:inline-flex;align-items:center;justify-content:center;width:100%;border:none;background:var(--brown);color:white;border-radius:14px;padding:15px 17px;font-size:14px;font-weight:750;margin-top:12px}.button.secondary{background:#efe7e1;color:#73594d}.button:disabled{opacity:.45;cursor:not-allowed}.back{border:0;background:transparent;color:var(--brown);font-weight:700;padding:4px 0 18px}.tiny-note{font-size:11px;color:var(--muted);line-height:1.8;margin-top:12px}.setting-card{display:flex;gap:12px;align-items:center;padding:16px;border:1px solid var(--border);border-radius:17px;background:var(--paper);margin-top:10px;cursor:pointer}.setting-card.selected{border:1.5px solid #aa8871;background:#f5eee7}.setting-card input{accent-color:#805c47;width:17px;height:17px}.setting-card strong{display:block;font-size:14px;margin-bottom:4px}.setting-card small{font-size:11px;color:var(--muted);line-height:1.6;display:block}.divider{height:1px;background:var(--border);margin:19px 0}.admin-pill{background:#eee6dc;padding:9px 12px;border-radius:12px;font-size:12px;border:1px solid #e3d5c8;color:#6e5142}.mock-label{font-size:10px;letter-spacing:.4px;color:#a18d7e;font-weight:700}.tagline{display:flex;align-items:center;gap:6px;font-size:11px;color:#a48d7e;margin-top:9px}.simple-input{width:100%;padding:13px 14px;border:1px solid var(--border);border-radius:12px;background:#fff;font-size:14px}.hidden{display:none!important}.toast{position:fixed;bottom:91px;left:50%;transform:translateX(-50%) translateY(18px);width:min(390px,calc(100% - 42px));background:#4e3c33;color:#fff;text-align:center;padding:14px;border-radius:13px;box-shadow:0 10px 30px #0002;font-size:12px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:20}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}.mode-line{display:flex;gap:6px;align-items:center;font-size:12px;color:#826d60}.empty-illustration{font-size:36px;background:#f4eee8;border-radius:50%;width:78px;height:78px;display:grid;place-items:center;margin:8px auto 15px}.history-item{border-bottom:1px solid var(--border);padding:15px 0}.history-item:last-child{border-bottom:0}
+    @media(min-width:650px){.app{margin:25px auto;min-height:calc(100dvh - 50px);border-radius:32px;padding-bottom:125px}.bottom-nav{bottom:25px;border-radius:0 0 32px 32px}}
+/* 간단한 여백 및 시연용 기록 카드 */
+.mt-6{margin-top:6px}
+.mt-7{margin-top:7px}
+.mt-9{margin-top:9px}
+.mt-12{margin-top:12px}
+.mt-14{margin-top:14px}
+.mt-17{margin-top:17px}
+.height-12{height:12px}
+.history-empty-card{text-align:center;padding:38px 22px}
+
+
+/* 외부 실시간 날씨 카드 */
+.weather-location-row{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:5px}
+.weather-city-label{font-size:11px;color:var(--muted);display:flex;align-items:center;gap:6px}
+.weather-city-label select{font:inherit;color:var(--brown);background:#fffaf5;border:1px solid #e4d7cd;border-radius:10px;padding:7px 22px 7px 9px;max-width:110px}
+.weather-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:15px;font-size:11px;color:var(--muted)}
+.weather-refresh{border:1px solid #d9c5b5;background:#fffaf5;color:var(--brown);border-radius:10px;font-size:11px;font-weight:700;padding:7px 10px;cursor:pointer}
+.weather-refresh:disabled{opacity:.5;cursor:wait}
+.weather .tagline a{color:inherit;text-decoration:underline}
+
+/* 현재 위치 기반 외부 날씨 */
+.weather-geolocation{font-size:11px;color:var(--brown);font-weight:700;text-align:right;max-width:55%}
+.weather-footer{align-items:flex-start;flex-wrap:wrap}
+.weather-footer #weather-update{flex:1;min-width:140px;line-height:1.6}
+
+/* QR 스캔으로 들어왔을 때만 나타나는 첫 화면 */
+body.qr-entry-active .bottom-nav{display:none}
+body.qr-entry-active .app{padding-bottom:28px}
+.qr-page{min-height:calc(100dvh - 54px)}
+.qr-entry{display:flex;flex-direction:column;align-items:center;text-align:center;padding:34px 5px 0}
+.qr-brand{display:flex;align-items:center;gap:9px;font-size:11px;letter-spacing:2.4px;font-weight:800;color:var(--accent)}
+.qr-brand-mark{width:32px;height:32px;border-radius:11px;background:#eee4dd;color:var(--brown);display:grid;place-items:center;font-size:23px;letter-spacing:0}
+.qr-hero-icon{height:112px;width:112px;border-radius:35px;background:linear-gradient(145deg,#f4e9e0,#e9d8ca);display:grid;place-items:center;font-size:60px;margin:60px 0 22px;box-shadow:0 13px 24px #9f78651c}
+.qr-eyebrow{font-size:11px;letter-spacing:2px;font-weight:800;color:var(--accent);margin-bottom:9px}
+.qr-entry h1{font-size:32px;letter-spacing:-1px}
+.qr-description{font-size:14px;line-height:1.9;color:var(--muted);margin-top:15px}
+.qr-summary{width:100%;margin-top:48px;background:var(--paper);border:1px solid var(--border);border-radius:21px;padding:21px;text-align:left;box-shadow:var(--shadow)}
+.qr-summary-label{font-size:12px;color:var(--muted);margin-bottom:13px}
+.qr-summary-value{display:flex;align-items:center;gap:10px;font-size:17px}
+.qr-location-icon{height:37px;width:37px;border-radius:12px;background:#f3ece6;color:var(--brown);display:grid;place-items:center;font-size:21px}
+.qr-selected-pill{margin-left:auto;font-size:10px;font-weight:700;color:#547b68;background:#e7efe8;padding:7px 8px;border-radius:999px}
+.qr-primary{margin-top:23px;justify-content:space-between;padding:18px 21px}
+.qr-primary span{font-size:21px;line-height:1}
+.qr-home-link{background:none;border:0;color:var(--muted);text-decoration:underline;text-underline-offset:4px;margin-top:22px;padding:10px;font-size:12px}
+.qr-footnote{text-align:center;margin-top:45px;color:#b6a79e;font-size:11px}
+@media(min-width:650px){.qr-page{min-height:650px}}
+
+/* 공공장소 사용자: QR에서 선택된 칸만 노출하고 전체 칸 메뉴를 숨김 */
+body.public-user-active .bottom-nav{display:none}
+body.public-user-active .app{padding-bottom:28px}
+.admin-test-btn{width:auto;flex:1;margin-top:0;font-size:12px;padding:13px 8px}
+
+/* 홈 화면 제목 */
+.home-title{margin:4px 2px 22px}
+.home-title h1{font-size:23px;line-height:1.35;letter-spacing:-.8px;word-break:keep-all}
+
+/* 공공장소 모드: QR 없이 접속 (프로토타입에서만 사용) */
+.page.qr-required-page.active{display:flex;flex-direction:column;min-height:calc(100dvh - 54px)}
+.prototype-access{margin-top:auto;padding:28px 0 calc(12px + env(safe-area-inset-bottom));text-align:center}
+.prototype-access-link{background:transparent;border:0;padding:9px 14px;color:#a28e82;font-size:11px;text-decoration:underline;text-underline-offset:4px}
+.prototype-access-link span{font-size:15px;vertical-align:middle}
+.no-qr-choices{background:var(--paper);border:1px solid var(--border);border-radius:16px;padding:15px;margin-top:10px}
+.no-qr-choices p{font-size:11px;color:var(--muted);margin-bottom:12px}
+.no-qr-button-row{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.no-qr-button-row button{border:1px solid #d8c5b7;background:#f1e9e3;color:var(--brown);font-size:12px;font-weight:700;border-radius:11px;padding:12px 6px}
+
+/* 공공장소 시작 화면의 관리자 진입 링크 (프로토타입 전용) */
+.start-admin-link{display:block;margin:10px auto 0;padding:8px 14px;background:transparent;border:0;color:#a28e82;font-size:11px;text-decoration:underline;text-underline-offset:4px}
+.prototype-access .start-admin-link{margin-bottom:2px}
